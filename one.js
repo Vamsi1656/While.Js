@@ -35,6 +35,12 @@ while(i<=24){
        console.log(i)
         i++
       }*/
-      const num = 12345;
-      const reverse = parseInt(num.toString().split('').reverse().join(''));
-      console.log(reverse);
+/*reverse a number*/
+
+let number = 123456789;
+let reversedNumber = 0;
+while (number > 0) {
+    reversedNumber = (reversedNumber * 10) + (number % 10);
+    number = Math.floor(number / 10);
+}
+console.log("Reversed number is : "+reversedNumber);
